@@ -26,33 +26,19 @@ A Telegram bot that monitors and logs deleted messages in chats, saving them to 
 
 ## Installation
 
-1. Clone this repository or copy the bot code.
+1. Clone repo or copy code.  
 
-2. Install dependencies:
+2. Create & activate venv:  
+   `python3 -m venv venv`  
+   `source venv/bin/activate` (Windows: `venv\Scripts\activate`)  
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. Rename `.env.example` to `.env` and edit.  
 
-3. Create a `.env` file in the project directory with the following variables:
+4. Install dependencies: `pip install -r requirements.txt`  
 
-   ```env
-   API_ID=your_api_id
-   API_HASH=your_api_hash
-   ADMIN_ID=your_telegram_user_id
-   DB_NAME=deleted_messages.db           # Optional, default is 'deleted_messages.db'
-   SESSION_NAME=client_session           # Optional, default is 'client_session'
-   LOG_LEVEL=INFO                        # Optional, e.g. DEBUG, INFO, WARNING
-   LOG_FILE=OmgaDeveloper.log            # Optional, path to log file
-   MAX_SEARCH_RESULTS=10                 # Optional, max search results for /search command
-   MAX_MESSAGE_DISPLAY_LENGTH=100        # Optional, max length of message preview
-   NOTIFY_DELETIONS=true                 # Optional, notify admin on deletions (true/false)
-   SAVE_MEDIA_MESSAGES=true              # Optional, save media messages text placeholder
-   ```
+5. Get `API_ID` & `API_HASH` from [my.telegram.org](https://my.telegram.org).  
 
-4. Get your `API_ID` and `API_HASH` from [https://my.telegram.org](https://my.telegram.org).
-
-5. Get your numeric Telegram user ID (for `ADMIN_ID`) by messaging [@userinfobot](https://t.me/userinfobot).
+6. Get your Telegram user ID via [@userinfobot](https://t.me/userinfobot).
 
 ---
 
