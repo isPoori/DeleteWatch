@@ -31,7 +31,7 @@ A Telegram bot that monitors and logs deleted messages in chats, saving them to 
 2. Install dependencies:
 
    ```bash
-   pip install telethon python-dotenv
+   pip install -r requirements.txt
    ```
 
 3. Create a `.env` file in the project directory with the following variables:
@@ -40,14 +40,14 @@ A Telegram bot that monitors and logs deleted messages in chats, saving them to 
    API_ID=your_api_id
    API_HASH=your_api_hash
    ADMIN_ID=your_telegram_user_id
-   DB_NAME=deleted_messages.db          # Optional, default is 'deleted_messages.db'
-   SESSION_NAME=client_session          # Optional, default is 'client_session'
-   LOG_LEVEL=INFO                      # Optional, e.g. DEBUG, INFO, WARNING
-   LOG_FILE=                          # Optional, path to log file
-   MAX_SEARCH_RESULTS=10               # Optional, max search results for /search command
-   MAX_MESSAGE_DISPLAY_LENGTH=100     # Optional, max length of message preview
-   NOTIFY_DELETIONS=true              # Optional, notify admin on deletions (true/false)
-   SAVE_MEDIA_MESSAGES=true            # Optional, save media messages text placeholder
+   DB_NAME=deleted_messages.db           # Optional, default is 'deleted_messages.db'
+   SESSION_NAME=client_session           # Optional, default is 'client_session'
+   LOG_LEVEL=INFO                        # Optional, e.g. DEBUG, INFO, WARNING
+   LOG_FILE=OmgaDeveloper.log            # Optional, path to log file
+   MAX_SEARCH_RESULTS=10                 # Optional, max search results for /search command
+   MAX_MESSAGE_DISPLAY_LENGTH=100        # Optional, max length of message preview
+   NOTIFY_DELETIONS=true                 # Optional, notify admin on deletions (true/false)
+   SAVE_MEDIA_MESSAGES=true              # Optional, save media messages text placeholder
    ```
 
 4. Get your `API_ID` and `API_HASH` from [https://my.telegram.org](https://my.telegram.org).
@@ -106,4 +106,4 @@ Feel free to contribute or open issues for improvements and bug fixes.
 
 ---
 
-*Thank you for DeleteWatch!*
+*Thank you for using DeleteWatch!*
