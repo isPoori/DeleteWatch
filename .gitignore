@@ -1,0 +1,30 @@
+# Ignore environment variable file
+.env
+
+# Ignore database files
+*.db
+*.sqlite3
+*.sqlite
+
+# Ignore session files
+*.session
+*.sess
+
+# Ignore log files
+*.log
+logs/
+log/
+
+# Ignore virtual environment directory
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VSCode settings
+.vscode/
+
+# MacOS system files
+.DS_Store
